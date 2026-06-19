@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">Contacto</div>
+
+    <nav id="nav-principal">
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+            <li><a href="contacto.html" class="activo">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="contenedor seccion">
+    <h1>Formulario de Contacto</h1>
+
+    <p>
+        Completa el siguiente formulario para enviar un mensaje.
+    </p>
+
+    <form action="#" method="POST" class="formulario">
+
+        <fieldset>
+            <legend>Datos personales</legend>
+
+            <label for="nombre">Nombre completo:</label>
+            <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    required
+                    placeholder="Escribe tu nombre completo">
+
+            <label for="email">Correo electrónico:</label>
+            <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    placeholder="correo@email.com">
+
+            <label for="telefono">Teléfono:</label>
+            <input
+                    type="tel"
+                    id="telefono"
+                    name="telefono"
+                    placeholder="8888-8888">
+
+            <label for="fecha">Fecha de nacimiento:</label>
+            <input
+                    type="date"
+                    id="fecha"
+                    name="fecha">
+
+            <label for="pais">País:</label>
+            <select id="pais" name="pais" required>
+                <option value="">Seleccione una opción</option>
+                <option value="cr">Costa Rica</option>
+                <option value="mx">México</option>
+                <option value="co">Colombia</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Tipo de contacto</legend>
+
+            <p>Seleccione el motivo del mensaje:</p>
+
+            <div class="opcion">
+                <input
+                        type="radio"
+                        id="consulta"
+                        name="tipo_contacto"
+                        value="consulta"
+                        required>
+                <label for="consulta">Consulta</label>
+            </div>
+
+            <div class="opcion">
+                <input
+                        type="radio"
+                        id="proyecto"
+                        name="tipo_contacto"
+                        value="proyecto">
+                <label for="proyecto">Proyecto</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Temas de interés</legend>
+
+            <p>Seleccione los temas que le interesan:</p>
+
+            <div class="opcion">
+                <input
+                        type="checkbox"
+                        id="html"
+                        name="interes"
+                        value="html">
+                <label for="html">HTML</label>
+            </div>
+
+            <div class="opcion">
+                <input
+                        type="checkbox"
+                        id="css"
+                        name="interes"
+                        value="css">
+                <label for="css">CSS</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Mensaje</legend>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea
+                    id="mensaje"
+                    name="mensaje"
+                    rows="5"
+                    required
+                    placeholder="Escribe tu mensaje aquí"></textarea>
+        </fieldset>
+
+        <div class="botones-form">
+            <button type="submit" class="btn-primario">Enviar</button>
+            <button type="reset" class="btn-secundario">Limpiar</button>
+        </div>
+
+    </form>
+</main>
+
+<footer>
+    <div>
+        <h3>Portafolio</h3>
+        <p>Formulario de contacto con HTML5.</p>
+    </div>
+
+    <div>
+        <h3>Enlaces</h3>
+        <p><a href="../index.html">Inicio</a></p>
+        <p><a href="proyectos.html">Proyectos</a></p>
+    </div>
+
+    <div>
+        <h3>Autor</h3>
+        <p>&copy; 2026 Melany</p>
+    </div>
+</footer>
+
+</body>
+</html>
